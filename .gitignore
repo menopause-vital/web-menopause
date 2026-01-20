@@ -1,0 +1,23 @@
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables (si decides usarlas)
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vercel
+.vercel
+

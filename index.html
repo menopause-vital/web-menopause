@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menopause Vital - Probióticos diseñados para mujeres en menopausia. Recupera tu bienestar de forma natural.">
+    <title>Menopause Vital - Probióticos para la Menopausia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/500x600/f4a6d0/ffffff?text=Menopause+Vital" alt="Menopause Vital - Probióticos para la Menopausia">
+                </div>
+                <div class="hero-text">
+                    <h1>Recupera tu bienestar en la menopausia de forma natural</h1>
+                    <p class="hero-subtitle">Menopause Vital es un probiótico formulado para apoyar tu equilibrio hormonal, digestivo y emocional en esta etapa de cambios.</p>
+                    <ul class="hero-benefits">
+                        <li>Ayuda a mejorar el bienestar digestivo en la menopausia.</li>
+                        <li>Contribuye al equilibrio de la microbiota y la salud intestinal.</li>
+                        <li>Apoya tu ánimo y niveles de energía de forma natural.</li>
+                        <li>Fácil de tomar y amable con tu cuerpo.</li>
+                    </ul>
+                    <button class="btn-primary hero-btn" onclick="openOrderModal()">Pedir con pago contraentrega</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Section -->
+    <section class="what-is">
+        <div class="container">
+            <h2>¿Qué es Menopause Vital?</h2>
+            <p>Menopause Vital es un probiótico diseñado especialmente para mujeres en etapa de menopausia y perimenopausia. Su combinación de cepas probióticas y nutrientes de apoyo busca acompañarte en el proceso de cambios hormonales, digestivos y emocionales, ayudando a que te sientas más ligera, equilibrada y en control de tu bienestar diario.</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2>Beneficios para tu día a día</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💚</div>
+                    <h3>Bienestar digestivo</h3>
+                    <p>Contribuye al equilibrio de la flora intestinal, ayudando a reducir malestares digestivos frecuentes en la menopausia.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚖️</div>
+                    <h3>Equilibrio y confort</h3>
+                    <p>Acompaña los cambios hormonales, apoyando una mejor sensación de estabilidad y comodidad.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Ánimo y energía</h3>
+                    <p>Apoyo suave para que te sientas con más vitalidad y mejor estado de ánimo.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Fácil de incorporar</h3>
+                    <p>Puedes integrarlo en tu rutina diaria sin complicaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>¿Cómo funciona Menopause Vital?</h2>
+            <p class="intro-text">Los probióticos de Menopause Vital ayudan a mantener una microbiota intestinal balanceada, lo que se relaciona con procesos digestivos más saludables y una mejor respuesta del organismo ante los cambios propios de la menopausia. Su fórmula combina cepas probióticas seleccionadas y nutrientes de apoyo que trabajan en conjunto para favorecer tu bienestar integral.</p>
+            <div class="ingredients-section">
+                <h3>Ingredientes principales</h3>
+                <ul class="ingredients-list">
+                    <li>Cepas probióticas seleccionadas (Lactobacillus y Bifidobacterium)</li>
+                    <li>Fibra prebiótica</li>
+                    <li>Vitaminas del grupo B</li>
+                    <li>Extractos naturales de apoyo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Mujeres reales, experiencias reales</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p>"Desde que empecé con Menopause Vital me siento menos pesada y con mejor ánimo durante el día."</p>
+                    <div class="testimonial-author">– Laura, 51 años, Medellín</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p>"Noté una mejora en mi digestión y ahora mi rutina es mucho más llevadera."</p>
+                    <div class="testimonial-author">– Marcela, 54 años, Bogotá</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p>"Me gusta que es un apoyo natural y fácil de tomar."</p>
+                    <div class="testimonial-author">– Adriana, 49 años, Cali</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secure Purchase Section -->
+    <section class="secure-purchase">
+        <div class="container">
+            <h2>Compra segura con pago contraentrega</h2>
+            <p>Realiza tu pedido hoy y paga únicamente cuando recibas tu producto en casa. Nuestro equipo de logística se encargará de coordinar el envío y la entrega en tu ciudad, para que puedas comprar con tranquilidad y confianza.</p>
+            <button class="btn-primary" onclick="openOrderModal()">Hacer mi pedido ahora</button>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Cómo se toma Menopause Vital?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sigue las indicaciones del empaque o las recomendaciones de tu profesional de salud de confianza.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿En cuánto tiempo veo resultados?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Cada cuerpo es diferente. Muchas mujeres reportan sentirse mejor progresivamente al integrarlo en su rutina diaria.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿El producto reemplaza un tratamiento médico?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. Menopause Vital es un complemento y no reemplaza la orientación de tu médico.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Hacen envíos a toda Colombia?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, realizamos envíos a nivel nacional mediante empresas de mensajería aliadas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Puedo pagar al recibir?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos pago contraentrega en la mayoría de ciudades del país.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-title">Menopause Vital · Envíos a toda Colombia</p>
+                <p class="footer-contact">Contacto: <a href="mailto:info@menopausevital.com">info@menopausevital.com</a></p>
+                <p class="footer-disclaimer">Este producto es un complemento alimenticio y no reemplaza una alimentación balanceada ni las recomendaciones de tu médico.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Button -->
+    <button class="floating-btn" onclick="openOrderModal()">
+        <span>Pedir con pago contraentrega</span>
+    </button>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeOrderModal()">&times;</button>
+            <h2>Realiza tu pedido</h2>
+            <p class="modal-subtitle">Completa el formulario y nuestro equipo se pondrá en contacto contigo.</p>
+            
+            <form id="orderForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo <span class="required">*</span></label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono <span class="required">*</span></label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                    <span class="error-message"></span>
+                    <small>Formato: 10 dígitos</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="departamento">Departamento <span class="required">*</span></label>
+                    <select id="departamento" name="departamento" required>
+                        <option value="">Selecciona un departamento</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Antioquia">Antioquia</option>
+                        <option value="Arauca">Arauca</option>
+                        <option value="Atlántico">Atlántico</option>
+                        <option value="Bolívar">Bolívar</option>
+                        <option value="Boyacá">Boyacá</option>
+                        <option value="Caldas">Caldas</option>
+                        <option value="Caquetá">Caquetá</option>
+                        <option value="Casanare">Casanare</option>
+                        <option value="Cauca">Cauca</option>
+                        <option value="Cesar">Cesar</option>
+                        <option value="Chocó">Chocó</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Cundinamarca">Cundinamarca</option>
+                        <option value="Guainía">Guainía</option>
+                        <option value="Guaviare">Guaviare</option>
+                        <option value="Huila">Huila</option>
+                        <option value="La Guajira">La Guajira</option>
+                        <option value="Magdalena">Magdalena</option>
+                        <option value="Meta">Meta</option>
+                        <option value="Nariño">Nariño</option>
+                        <option value="Norte de Santander">Norte de Santander</option>
+                        <option value="Putumayo">Putumayo</option>
+                        <option value="Quindío">Quindío</option>
+                        <option value="Risaralda">Risaralda</option>
+                        <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                        <option value="Santander">Santander</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Tolima">Tolima</option>
+                        <option value="Valle del Cauca">Valle del Cauca</option>
+                        <option value="Vaupés">Vaupés</option>
+                        <option value="Vichada">Vichada</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="ciudad">Ciudad / Municipio <span class="required">*</span></label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección completa <span class="required">*</span></label>
+                    <input type="text" id="direccion" name="direccion" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="barrio">Barrio <span class="required">*</span></label>
+                    <input type="text" id="barrio" name="barrio" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidad">Cantidad de unidades <span class="required">*</span></label>
+                    <select id="cantidad" name="cantidad" required>
+                        <option value="">Selecciona cantidad</option>
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contacto">Medio de contacto preferido <span class="required">*</span></label>
+                    <select id="contacto" name="contacto" required>
+                        <option value="">Selecciona opción</option>
+                        <option value="WhatsApp">WhatsApp</option>
+                        <option value="Llamada telefónica">Llamada telefónica</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="observaciones">Observaciones adicionales</label>
+                    <textarea id="observaciones" name="observaciones" rows="4"></textarea>
+                </div>
+
+                <div id="formError" class="form-error"></div>
+
+                <button type="submit" class="btn-primary btn-submit" id="submitBtn">
+                    <span id="submitText">Enviar pedido</span>
+                    <span id="submitLoading" class="submit-loading" style="display: none;">Enviando...</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message" style="display: none;">
+        <div class="success-content">
+            <div class="success-icon">✓</div>
+            <h3>¡Gracias!</h3>
+            <p>Tu pedido con pago contraentrega ha sido registrado. Nuestro equipo se pondrá en contacto contigo para coordinar el envío.</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
