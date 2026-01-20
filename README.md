@@ -2,6 +2,8 @@
 
 Landing page para la venta de probióticos Menopause Vital, diseñada para desplegarse en Vercel como sitio estático.
 
+> Última actualización: 2024
+
 ## 🚀 Características
 
 - ✅ Diseño responsivo (desktop, tablet y móvil)
