@@ -19,7 +19,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-image">
-                    <img src="https://via.placeholder.com/500x600/f4a6d0/ffffff?text=Menopause+Vital" alt="Menopause Vital - Probióticos para la Menopausia">
+                    <img src="./images/hero-producto.jpg" alt="Menopause Vital - Probióticos para la Menopausia" id="heroImage" loading="eager" width="500" height="600">
                 </div>
                 <div class="hero-text">
                     <h1>Recupera tu bienestar en la menopausia de forma natural</h1>
@@ -36,6 +36,13 @@
         </div>
     </section>
 
+    <!-- Infografía de Beneficios -->
+    <section class="benefits-infographic">
+        <div class="container">
+            <img src="./images/infografia-beneficios.jpg" alt="Beneficios detallados del probiótico menopáusico" id="benefitsInfographic" class="infographic-image" loading="lazy" width="1200" height="1600">
+        </div>
+    </section>
+
     <!-- What is Section -->
     <section class="what-is">
         <div class="container">
@@ -44,42 +51,12 @@
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
+    <!-- Ingredients Section -->
+    <section class="ingredients">
         <div class="container">
-            <h2>Beneficios para tu día a día</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">💚</div>
-                    <h3>Bienestar digestivo</h3>
-                    <p>Contribuye al equilibrio de la flora intestinal, ayudando a reducir malestares digestivos frecuentes en la menopausia.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">⚖️</div>
-                    <h3>Equilibrio y confort</h3>
-                    <p>Acompaña los cambios hormonales, apoyando una mejor sensación de estabilidad y comodidad.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">✨</div>
-                    <h3>Ánimo y energía</h3>
-                    <p>Apoyo suave para que te sientas con más vitalidad y mejor estado de ánimo.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🌿</div>
-                    <h3>Fácil de incorporar</h3>
-                    <p>Puedes integrarlo en tu rutina diaria sin complicaciones.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How it Works Section -->
-    <section class="how-it-works">
-        <div class="container">
-            <h2>¿Cómo funciona Menopause Vital?</h2>
+            <h2>Ingredientes principales</h2>
             <p class="intro-text">Los probióticos de Menopause Vital ayudan a mantener una microbiota intestinal balanceada, lo que se relaciona con procesos digestivos más saludables y una mejor respuesta del organismo ante los cambios propios de la menopausia. Su fórmula combina cepas probióticas seleccionadas y nutrientes de apoyo que trabajan en conjunto para favorecer tu bienestar integral.</p>
             <div class="ingredients-section">
-                <h3>Ingredientes principales</h3>
                 <ul class="ingredients-list">
                     <li>Cepas probióticas seleccionadas (Lactobacillus y Bifidobacterium)</li>
                     <li>Fibra prebiótica</li>
@@ -90,36 +67,50 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials Section with Carousel -->
     <section class="testimonials">
         <div class="container">
             <h2>Mujeres reales, experiencias reales</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-quote">"</div>
-                    <p>"Desde que empecé con Menopause Vital me siento menos pesada y con mejor ánimo durante el día."</p>
-                    <div class="testimonial-author">– Laura, 51 años, Medellín</div>
+            <div class="testimonials-carousel">
+                <div class="testimonial-slides" id="testimonialSlides">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="./images/testimonial-laura.jpg" alt="Laura" id="testimonialLaura" loading="lazy" width="400" height="400">
+                        </div>
+                        <div class="testimonial-quote">"</div>
+                        <p>"Desde que empecé con Menopause Vital me siento menos pesada y con mejor ánimo durante el día."</p>
+                        <div class="testimonial-author">– Laura, 51 años, Medellín</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="./images/testimonial-marcela.jpg" alt="Marcela" id="testimonialMarcela" loading="lazy" width="400" height="400">
+                        </div>
+                        <div class="testimonial-quote">"</div>
+                        <p>"Noté una mejora en mi digestión y ahora mi rutina es mucho más llevadera."</p>
+                        <div class="testimonial-author">– Marcela, 54 años, Bogotá</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="./images/testimonial-adriana.jpg" alt="Adriana" id="testimonialAdriana" loading="lazy" width="400" height="400">
+                        </div>
+                        <div class="testimonial-quote">"</div>
+                        <p>"Me gusta que es un apoyo natural y fácil de tomar."</p>
+                        <div class="testimonial-author">– Adriana, 49 años, Cali</div>
+                    </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-quote">"</div>
-                    <p>"Noté una mejora en mi digestión y ahora mi rutina es mucho más llevadera."</p>
-                    <div class="testimonial-author">– Marcela, 54 años, Bogotá</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-quote">"</div>
-                    <p>"Me gusta que es un apoyo natural y fácil de tomar."</p>
-                    <div class="testimonial-author">– Adriana, 49 años, Cali</div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" onclick="moveCarousel(-1)" aria-label="Anterior">‹</button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn next" onclick="moveCarousel(1)" aria-label="Siguiente">›</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Secure Purchase Section -->
-    <section class="secure-purchase">
+    <!-- Secure Purchase Image Section -->
+    <section class="secure-purchase-image">
         <div class="container">
-            <h2>Compra segura con pago contraentrega</h2>
-            <p>Realiza tu pedido hoy y paga únicamente cuando recibas tu producto en casa. Nuestro equipo de logística se encargará de coordinar el envío y la entrega en tu ciudad, para que puedas comprar con tranquilidad y confianza.</p>
-            <button class="btn-primary" onclick="openOrderModal()">Hacer mi pedido ahora</button>
+            <img src="./images/pago-contraentrega.jpg" alt="Compra segura con pago contraentrega" id="securePurchaseImage" class="purchase-image" loading="lazy" width="1920" height="1080">
         </div>
     </section>
 
@@ -182,7 +173,7 @@
         <div class="container">
             <div class="footer-content">
                 <p class="footer-title">Menopause Vital · Envíos a toda Colombia</p>
-                <p class="footer-contact">Contacto: <a href="mailto:info@menopausevital.com">info@menopausevital.com</a></p>
+                <p class="footer-contact">Contacto: <a href="mailto:info@menopausevital.store">info@menopausevital.store</a></p>
                 <p class="footer-disclaimer">Este producto es un complemento alimenticio y no reemplaza una alimentación balanceada ni las recomendaciones de tu médico.</p>
             </div>
         </div>
@@ -326,4 +317,3 @@
     <script src="./script.js"></script>
 </body>
 </html>
-

@@ -275,3 +275,81 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }, false);
 
+// Testimonials Carousel
+let currentTestimonial = 0;
+const testimonials = document.querySelectorAll('.testimonial-card');
+const totalTestimonials = testimonials.length;
+
+// Initialize carousel dots
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselDots = document.getElementById('carouselDots');
+    if (carouselDots && totalTestimonials > 0) {
+        for (let i = 0; i < totalTestimonials; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'carousel-dot';
+            if (i === 0) dot.classList.add('active');
+            dot.onclick = () => moveToTestimonial(i);
+            carouselDots.appendChild(dot);
+        }
+    }
+});
+
+function moveCarousel(direction) {
+    currentTestimonial += direction;
+    
+    if (currentTestimonial < 0) {
+        currentTestimonial = totalTestimonials - 1;
+    } else if (currentTestimonial >= totalTestimonials) {
+        currentTestimonial = 0;
+    }
+    
+    moveToTestimonial(currentTestimonial);
+}
+
+function moveToTestimonial(index) {
+    currentTestimonial = index;
+    const slides = document.getElementById('testimonialSlides');
+    if (slides) {
+        slides.scrollTo({
+            left: testimonials[index].offsetLeft,
+            behavior: 'smooth'
+        });
+    }
+    
+    // Update active dot
+    const dots = document.querySelectorAll('.carousel-dot');
+    dots.forEach((dot, i) => {
+        if (i === index) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
+        }
+    });
+}
+
+// Auto-advance carousel (optional)
+let carouselInterval;
+function startCarousel() {
+    carouselInterval = setInterval(() => {
+        moveCarousel(1);
+    }, 5000);
+}
+
+function stopCarousel() {
+    clearInterval(carouselInterval);
+}
+
+// Start auto-advance when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    if (totalTestimonials > 1) {
+        startCarousel();
+        
+        // Pause on hover
+        const carousel = document.querySelector('.testimonials-carousel');
+        if (carousel) {
+            carousel.addEventListener('mouseenter', stopCarousel);
+            carousel.addEventListener('mouseleave', startCarousel);
+        }
+    }
+});
+
