@@ -327,12 +327,12 @@ function moveToTestimonial(index) {
     });
 }
 
-// Auto-advance carousel (optional)
+// Auto-advance carousel (every 3 seconds)
 let carouselInterval;
 function startCarousel() {
     carouselInterval = setInterval(() => {
         moveCarousel(1);
-    }, 5000);
+    }, 3000);
 }
 
 function stopCarousel() {

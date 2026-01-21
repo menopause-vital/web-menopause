@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ruda', sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
     background-color: var(--white);
@@ -52,34 +52,76 @@ body {
     height: auto;
     border-radius: 20px;
     box-shadow: 0 10px 30px var(--shadow-lg);
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .hero-text h1 {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--text-dark);
     margin-bottom: 20px;
     line-height: 1.2;
+    animation: fadeInUp 0.8s ease-out;
+    letter-spacing: -0.5px;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: var(--text-gray);
     margin-bottom: 30px;
     font-weight: 400;
+    line-height: 1.7;
+    animation: fadeInUp 0.9s ease-out;
 }
 
 .hero-benefits {
     list-style: none;
     margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
 }
 
 .hero-benefits li {
-    padding: 10px 0;
+    padding: 12px 0;
     padding-left: 30px;
     position: relative;
     color: var(--text-dark);
-    font-size: 1rem;
+    font-size: 1.05rem;
+    transition: transform 0.2s ease;
+}
+
+.hero-benefits li:hover {
+    transform: translateX(5px);
 }
 
 .hero-benefits li::before {
@@ -102,7 +144,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px var(--shadow);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ruda', sans-serif;
 }
 
 .btn-primary:hover {
@@ -133,6 +175,7 @@ body {
     box-shadow: 0 5px 20px var(--shadow);
     max-width: 1200px;
     margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out;
 }
 
 /* What is Section */
@@ -146,7 +189,11 @@ body {
     color: var(--text-dark);
     margin-bottom: 30px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.what-is {
+    animation: fadeIn 1s ease-out;
 }
 
 .what-is p {
@@ -185,6 +232,7 @@ body {
     text-align: center;
     box-shadow: 0 5px 20px var(--shadow);
     transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease-out;
 }
 
 .benefit-card:hover {
@@ -216,6 +264,25 @@ body {
     background: linear-gradient(to bottom, var(--white) 0%, var(--primary-beige) 100%);
 }
 
+.ingredients h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.ingredients-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px var(--shadow);
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
 .how-it-works h2 {
     font-size: 2.2rem;
     color: var(--text-dark);
@@ -236,9 +303,11 @@ body {
 .ingredients-section {
     max-width: 700px;
     margin: 0 auto;
-    background: var(--primary-beige);
+    background: var(--white);
     padding: 40px;
     border-radius: 15px;
+    box-shadow: 0 5px 20px var(--shadow);
+    animation: fadeInUp 1s ease-out;
 }
 
 .ingredients-section h3 {
@@ -253,11 +322,17 @@ body {
 }
 
 .ingredients-list li {
-    padding: 12px 0;
+    padding: 14px 0;
     padding-left: 30px;
     position: relative;
     color: var(--text-dark);
-    font-size: 1rem;
+    font-size: 1.05rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.ingredients-list li:hover {
+    transform: translateX(5px);
+    color: var(--primary-dark);
 }
 
 .ingredients-list li::before {
@@ -280,7 +355,7 @@ body {
     color: var(--text-dark);
     margin-bottom: 50px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .testimonials-carousel {
@@ -302,21 +377,33 @@ body {
     min-width: 100%;
     scroll-snap-align: start;
     background: var(--white);
-    padding: 40px 30px;
+    padding: 50px 40px;
     border-radius: 15px;
     box-shadow: 0 5px 20px var(--shadow);
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--shadow-lg);
 }
 
 .testimonial-avatar {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 20px;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 25px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--primary-coral);
     box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover .testimonial-avatar {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px var(--shadow-lg);
 }
 
 .testimonial-avatar img {
@@ -335,10 +422,11 @@ body {
 
 .testimonial-card p {
     color: var(--text-gray);
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-style: italic;
+    font-weight: 400;
 }
 
 .testimonial-author {
@@ -411,6 +499,7 @@ body {
     box-shadow: 0 5px 20px var(--shadow);
     max-width: 1200px;
     margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out;
 }
 
 /* FAQ Section */
@@ -424,7 +513,7 @@ body {
     color: var(--text-dark);
     margin-bottom: 40px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .faq-list {
@@ -438,6 +527,13 @@ body {
     border-radius: 10px;
     overflow: hidden;
     background: var(--white);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.faq-item:hover {
+    border-color: var(--primary-coral);
+    box-shadow: 0 2px 10px var(--shadow);
 }
 
 .faq-question {
@@ -453,7 +549,7 @@ body {
     font-size: 1.1rem;
     color: var(--text-dark);
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ruda', sans-serif;
     transition: background-color 0.3s ease;
 }
 
@@ -542,7 +638,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 20px var(--shadow-lg);
     z-index: 1000;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ruda', sans-serif;
     animation: pulse 2s infinite;
     transition: all 0.3s ease;
 }
@@ -671,7 +767,7 @@ body {
     border: 2px solid #e5e7eb;
     border-radius: 8px;
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ruda', sans-serif;
     transition: border-color 0.3s ease;
     background-color: var(--white);
 }
