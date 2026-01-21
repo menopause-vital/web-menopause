@@ -167,21 +167,7 @@ p, li, span, div, label, input, textarea, select {
 .hero-btn {
     font-size: 1.2rem;
     padding: 18px 50px;
-}
-
-.price-info {
-    margin-top: 25px;
-    margin-bottom: 20px;
-    text-align: center;
-    animation: fadeInUp 1.1s ease-out;
-}
-
-.price-text {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--primary-dark);
-    margin: 0;
-    letter-spacing: 0.5px;
+    margin-bottom: 25px;
 }
 
 .hero-payment-image {
@@ -189,10 +175,10 @@ p, li, span, div, label, input, textarea, select {
     max-width: 800px;
     height: auto;
     display: block;
-    margin: 20px auto 0;
+    margin: 25px auto 0;
     border-radius: 15px;
     box-shadow: 0 5px 20px var(--shadow);
-    animation: fadeInUp 1.2s ease-out;
+    animation: fadeInUp 1.1s ease-out;
 }
 
 /* Benefits Infographic Section */
@@ -318,67 +304,6 @@ p, li, span, div, label, input, textarea, select {
     animation: fadeInUp 0.8s ease-out;
 }
 
-.how-it-works h2 {
-    font-size: 2.2rem;
-    color: var(--text-dark);
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: 600;
-}
-
-.intro-text {
-    font-size: 1.1rem;
-    color: var(--text-gray);
-    max-width: 800px;
-    margin: 0 auto 40px;
-    text-align: center;
-    line-height: 1.8;
-}
-
-.ingredients-section {
-    max-width: 700px;
-    margin: 0 auto;
-    background: var(--white);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px var(--shadow);
-    animation: fadeInUp 1s ease-out;
-}
-
-.ingredients-section h3 {
-    font-size: 1.5rem;
-    color: var(--text-dark);
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.ingredients-list {
-    list-style: none;
-}
-
-.ingredients-list li {
-    padding: 14px 0;
-    padding-left: 30px;
-    position: relative;
-    color: var(--text-dark);
-    font-size: 1.05rem;
-    font-weight: 500;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.ingredients-list li:hover {
-    transform: translateX(5px);
-    color: var(--primary-dark);
-}
-
-.ingredients-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--primary-dark);
-    font-weight: bold;
-    font-size: 1.5rem;
-}
 
 /* Testimonials Section with Carousel */
 .testimonials {
@@ -961,6 +886,12 @@ p, li, span, div, label, input, textarea, select {
 
     .hero-subtitle {
         font-size: 1rem;
+    }
+
+    .hero-payment-image {
+        max-width: 100%;
+        margin: 20px auto 0;
+        border-radius: 10px;
     }
 
     .what-is,
