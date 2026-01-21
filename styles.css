@@ -23,6 +23,11 @@ body {
     line-height: 1.6;
     background-color: var(--white);
     overflow-x: hidden;
+    font-weight: 500;
+}
+
+p, li, span, div, label, input, textarea, select {
+    font-weight: 500;
 }
 
 .container {
@@ -88,7 +93,7 @@ body {
 
 .hero-text h1 {
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--text-dark);
     margin-bottom: 20px;
     line-height: 1.2;
@@ -100,7 +105,7 @@ body {
     font-size: 1.15rem;
     color: var(--text-gray);
     margin-bottom: 30px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.7;
     animation: fadeInUp 0.9s ease-out;
 }
@@ -117,6 +122,7 @@ body {
     position: relative;
     color: var(--text-dark);
     font-size: 1.05rem;
+    font-weight: 500;
     transition: transform 0.2s ease;
 }
 
@@ -140,11 +146,13 @@ body {
     border: none;
     border-radius: 50px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px var(--shadow);
     font-family: 'Ruda', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .btn-primary:hover {
@@ -189,7 +197,7 @@ body {
     color: var(--text-dark);
     margin-bottom: 30px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .what-is {
@@ -203,6 +211,7 @@ body {
     margin: 0 auto;
     text-align: center;
     line-height: 1.8;
+    font-weight: 500;
 }
 
 /* Benefits Section */
@@ -269,7 +278,7 @@ body {
     font-size: 2.2rem;
     color: var(--text-dark);
     margin-bottom: 40px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .ingredients-image {
@@ -327,6 +336,7 @@ body {
     position: relative;
     color: var(--text-dark);
     font-size: 1.05rem;
+    font-weight: 500;
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
@@ -355,7 +365,7 @@ body {
     color: var(--text-dark);
     margin-bottom: 50px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .testimonials-carousel {
@@ -426,7 +436,7 @@ body {
     line-height: 1.8;
     margin-bottom: 25px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .testimonial-author {
@@ -513,7 +523,7 @@ body {
     color: var(--text-dark);
     margin-bottom: 40px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .faq-list {
@@ -548,7 +558,7 @@ body {
     align-items: center;
     font-size: 1.1rem;
     color: var(--text-dark);
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Ruda', sans-serif;
     transition: background-color 0.3s ease;
 }
@@ -582,6 +592,7 @@ body {
     padding: 0 25px 20px;
     color: var(--text-gray);
     line-height: 1.8;
+    font-weight: 500;
 }
 
 /* Footer */
@@ -599,13 +610,14 @@ body {
 
 .footer-title {
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
 .footer-contact {
     font-size: 1rem;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .footer-contact a {
@@ -621,6 +633,7 @@ body {
     font-size: 0.9rem;
     color: #9ca3af;
     line-height: 1.6;
+    font-weight: 500;
 }
 
 /* Floating Button */
@@ -634,13 +647,15 @@ body {
     border: none;
     border-radius: 50px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     box-shadow: 0 4px 20px var(--shadow-lg);
     z-index: 1000;
     font-family: 'Ruda', sans-serif;
     animation: pulse 2s infinite;
     transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .floating-btn:hover {
@@ -733,13 +748,14 @@ body {
     font-size: 2rem;
     color: var(--text-dark);
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .modal-subtitle {
     color: var(--text-gray);
     margin-bottom: 30px;
     font-size: 1rem;
+    font-weight: 500;
 }
 
 /* Form Styles */
@@ -751,7 +767,7 @@ body {
     display: block;
     margin-bottom: 8px;
     color: var(--text-dark);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.95rem;
 }
 
