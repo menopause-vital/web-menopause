@@ -446,6 +446,23 @@ p, li, span, div, label, input, textarea, select {
     transform: scale(1.2);
 }
 
+/* Pricing Image Section */
+.pricing-image {
+    padding: 40px 20px;
+    background-color: var(--white);
+}
+
+.pricing-product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px var(--shadow);
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out;
+}
+
 /* Secure Purchase Image Section */
 .secure-purchase-image {
     padding: 40px 20px;
@@ -897,6 +914,7 @@ p, li, span, div, label, input, textarea, select {
     .what-is,
     .ingredients,
     .testimonials,
+    .pricing-image,
     .secure-purchase-image,
     .faq {
         padding: 60px 20px;
@@ -910,6 +928,7 @@ p, li, span, div, label, input, textarea, select {
     }
     
     .benefits-infographic,
+    .pricing-image,
     .secure-purchase-image {
         padding: 30px 20px;
     }
