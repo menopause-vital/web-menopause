@@ -198,12 +198,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Correo electrónico <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required>
-                    <span class="error-message"></span>
-                </div>
-
-                <div class="form-group">
                     <label for="departamento">Departamento <span class="required">*</span></label>
                     <select id="departamento" name="departamento" required>
                         <option value="">Selecciona un departamento</option>
@@ -250,41 +244,15 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="direccion">Dirección completa <span class="required">*</span></label>
-                    <input type="text" id="direccion" name="direccion" required>
-                    <span class="error-message"></span>
-                </div>
-
-                <div class="form-group">
                     <label for="barrio">Barrio <span class="required">*</span></label>
                     <input type="text" id="barrio" name="barrio" required>
                     <span class="error-message"></span>
                 </div>
 
                 <div class="form-group">
-                    <label for="cantidad">Cantidad de unidades <span class="required">*</span></label>
-                    <select id="cantidad" name="cantidad" required>
-                        <option value="">Selecciona cantidad</option>
-                        <option value="1">1 unidad</option>
-                        <option value="2">2 unidades</option>
-                        <option value="3">3 unidades</option>
-                    </select>
+                    <label for="direccion">Dirección completa y referencia para encontrar fácil tu casa <span class="required">*</span></label>
+                    <textarea id="direccion" name="direccion" rows="2" required></textarea>
                     <span class="error-message"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="contacto">Medio de contacto preferido <span class="required">*</span></label>
-                    <select id="contacto" name="contacto" required>
-                        <option value="">Selecciona opción</option>
-                        <option value="WhatsApp">WhatsApp</option>
-                        <option value="Llamada telefónica">Llamada telefónica</option>
-                    </select>
-                    <span class="error-message"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="observaciones">Observaciones adicionales</label>
-                    <textarea id="observaciones" name="observaciones" rows="4"></textarea>
                 </div>
 
                 <div id="formError" class="form-error"></div>

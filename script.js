@@ -90,15 +90,6 @@ function validateForm() {
         }
     });
     
-    // Validate email
-    const emailField = document.getElementById('email');
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (emailField.value && !emailPattern.test(emailField.value)) {
-        isValid = false;
-        emailField.classList.add('error');
-        emailField.parentElement.querySelector('.error-message').textContent = 'Por favor ingresa un email válido';
-    }
-    
     // Validate phone
     const phoneField = document.getElementById('telefono');
     const phonePattern = /^[0-9]{10}$/;
@@ -155,15 +146,11 @@ async function handleFormSubmit(event) {
     const templateParams = {
         order_receiver_email: ORDER_RECEIVER_EMAIL,
         from_name: formData.get('nombre'),
-        from_email: formData.get('email'),
         phone: formData.get('telefono'),
         departamento: formData.get('departamento'),
         ciudad: formData.get('ciudad'),
-        direccion: formData.get('direccion'),
         barrio: formData.get('barrio'),
-        cantidad: formData.get('cantidad'),
-        contacto_preferido: formData.get('contacto'),
-        observaciones: formData.get('observaciones') || 'Ninguna',
+        direccion: formData.get('direccion'),
         fecha_hora: new Date().toLocaleString('es-CO', {
             timeZone: 'America/Bogota',
             year: 'numeric',
