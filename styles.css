@@ -169,6 +169,32 @@ p, li, span, div, label, input, textarea, select {
     padding: 18px 50px;
 }
 
+.price-info {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeInUp 1.1s ease-out;
+}
+
+.price-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.hero-payment-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px var(--shadow);
+    animation: fadeInUp 1.2s ease-out;
+}
+
 /* Benefits Infographic Section */
 .benefits-infographic {
     padding: 40px 20px;
